@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+:root {
+--Pink: hsl(322, 100%, 66%);
+--VeryPaleCyan: hsl(193, 100%, 96%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--GrayishBlue: hsl(208, 11%, 55%);
+--headerFont: 'Poppins', sans-serif;
+--copy-CTA: 'Open Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-size: 18px;
+}
+
+nav{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(bg-hero-desktop.svg);
+
+}
+
+nav div img {
+    width: 100px;
+
+}
+
+nav div button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-family: var(--copy-CTA);
+}
+
+.header{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(bg-hero-desktop.svg);
+}
+
+.header-text{
+    flex-basis: 40%;
+    padding-right: 20px;
+}
+
+.header-text h1{
+    padding-bottom: 20px;
+    font-family: var(--headerFont);
+    line-height: 2.7rem;
+    font-weight: 600;
+    
+}
+
+p{
+    padding-bottom: 40px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: smaller;
+    font-family: var(--copy-CTA);
+}
+
+.header-text button{
+    padding: 20px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Pink);
+    color: var(--VeryPaleCyan);
+    font-family: var(--copy-CTA);
+}
+
+.header img{
+    flex-basis: 60%;
+    width: 700px;
+}
+
+.one{
+    margin:40px 80px;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid var(--VeryPaleCyan);
+    
+}
+
+.one div{
+    flex-basis: 50%;
+}
+
+
+.one img{
+    flex-basis: 50%;
+    width: 500px;
+    height: 600px;
+    object-fit: contain;
+    padding: 30px;
+    
+}
