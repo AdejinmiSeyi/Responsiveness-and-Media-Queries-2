@@ -9,6 +9,11 @@
 --GrayishBlue: hsl(208, 11%, 55%);
 --headerFont: 'Poppins', sans-serif;
 --copy-CTA: 'Open Sans', sans-serif;
+
+--blur: 0.7px;
+--spread: -0.5px;
+--horiz: -0.286788px;
+--vert: 0.409576px;
 }
 
 
@@ -25,7 +30,7 @@ body{
 }
 
 nav{
-    padding: 20px 40px;
+    padding: 20px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,10 +49,15 @@ nav div button {
     border: none;
     background-color: white;
     font-family: var(--copy-CTA);
+    box-shadow: calc(clamp(0px, var(--horiz), 2px)) calc(clamp(0px, var(--vert), 2px)) 2px calc(var(--spread)) rgba(0, 0, 0, 0.233), calc(2 * var(--horiz)) calc(2 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.20), calc(3 * var(--horiz)) calc(3 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.123), calc(5 * var(--horiz)) calc(5 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.076), calc(8 * var(--horiz)) calc(8 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.047), calc(13 * var(--horiz)) calc(13 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.028);
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    
 }
+    
+
 
 .header{
-    padding: 50px;
+    padding: 50px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +74,7 @@ nav div button {
     font-family: var(--headerFont);
     line-height: 2.7rem;
     font-weight: 600;
-    
+    color: var(--VeryDarkCyan);
 }
 
 p{
@@ -73,6 +83,7 @@ p{
     font-weight: 400;
     font-size: smaller;
     font-family: var(--copy-CTA);
+    color: var(--VeryDarkCyan);
 }
 
 .header-text button{
@@ -86,8 +97,19 @@ p{
 
 .header img{
     flex-basis: 60%;
-    width: 700px;
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
 }
+
+
+h3{
+    font-family: var(--headerFont);
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--VeryDarkCyan);
+}
+
 
 .one{
     margin:40px 80px;
@@ -95,19 +117,37 @@ p{
     display: flex;
     align-items: center;
     border: 0.5px solid var(--VeryPaleCyan);
+    height: 400px;
+}
+
+.one.two div{
+    padding-left: 80px;
+    padding-right: 30px;
+    flex-basis: 60%;
+}
+
+
+.one.two img{
     
+    object-fit:fill ;
+    padding: 20px 30px 20px 0px;
+    flex-basis: 40%;
 }
 
 .one div{
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 
 .one img{
-    flex-basis: 50%;
-    width: 500px;
-    height: 600px;
+    flex-basis: 60%;
+    width: 400px;
+    height: 400px;
     object-fit: contain;
-    padding: 30px;
+    padding: 20px;
     
 }
+
+/* .overlap {
+
+} */
