@@ -49,9 +49,7 @@ nav div button {
     border: none;
     background-color: white;
     font-family: var(--copy-CTA);
-    box-shadow: calc(clamp(0px, var(--horiz), 2px)) calc(clamp(0px, var(--vert), 2px)) 2px calc(var(--spread)) rgba(0, 0, 0, 0.233), calc(2 * var(--horiz)) calc(2 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.20), calc(3 * var(--horiz)) calc(3 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.123), calc(5 * var(--horiz)) calc(5 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.076), calc(8 * var(--horiz)) calc(8 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.047), calc(13 * var(--horiz)) calc(13 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.028);
-    border: 1px solid rgba(0, 0, 0, 0.068);
-    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
     
 
@@ -151,3 +149,43 @@ h3{
 /* .overlap {
 
 } */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background-color: var(--VeryDarkCyan);
+   
+}
+
+footer p{
+    padding-bottom: 0px;
+    color: #fff;
+    display: inline ;
+    margin: auto;
+}
+
+
+.white-logo{
+    /* margin-bottom: 20px; */
+    
+}
+
+.first .white-logo {
+    /* width: 100px; */
+    color: #fff;
+    background-color: #fff;
+}
+
+
+li {
+    list-style: none;
+    padding-bottom: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
