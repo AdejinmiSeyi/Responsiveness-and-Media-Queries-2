@@ -168,12 +168,8 @@ footer p{
 
 
 .white-logo{
-    /* margin-bottom: 20px; */
-    
-}
-
-.first .white-logo {
-    /* width: 100px; */
+    margin: 20px auto;
+    padding: 20px auto;
     color: #fff;
     background-color: #fff;
 }
